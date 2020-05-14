@@ -220,7 +220,7 @@ The API will return five error types when requests fail:
 #### POST /questions
 - General:
     - Creates a new question using the submitted question, answer, difficulty and category. Returns the success value and details of the created question.
-- `curl -d '{"question":"hello","answer":"hello","difficulty":1,"category":1}' -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/questions`
+- Sample: `curl -d '{"question":"hello","answer":"hello","difficulty":1,"category":1}' -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/questions`
 ```
 {
   "question": {
@@ -236,7 +236,7 @@ The API will return five error types when requests fail:
 #### DELETE /questions/{question_id}
 - General:
     - Deletes the question of the given ID if it exists. Returns the success value, success value and details of the deleted question.
-- `curl http://127.0.0.1:5000/questions/48 -X DELETE`
+- Sample: `curl http://127.0.0.1:5000/questions/48 -X DELETE`
 ```
 {
   "question": {
@@ -254,7 +254,7 @@ The API will return five error types when requests fail:
     - Returns a list of question objects for the specified category, success value, total number of questions, the current category, and total number of pages of results.
     - Results are paginated in groups of 10. Include a request argument to choose page number, starting from 1. 
     - To select a category input the category number minus one (i.e. for category 2, enter 1. For category 5, enter 4, etc...)
-- `curl http://127.0.0.1:5000/categories/1/questions`
+- Sample: `curl http://127.0.0.1:5000/categories/1/questions`
 ```
 {
 "currentCategory": 2,
@@ -317,7 +317,7 @@ The API will return five error types when requests fail:
 - General:
     - Searches for a string in all of the questions.
     - Returns a list of question objects, success value and total number of questions which match the search criteria.
-- `curl http://127.0.0.1:5000/questions/beetle -X POST`
+- Sample: `curl http://127.0.0.1:5000/questions/beetle -X POST`
 ```
 {
   "questions": [
@@ -339,7 +339,7 @@ The API will return five error types when requests fail:
     - Posts the prior questions (if any) and the desired quiz category (or "ALL").
     - Returns one question at random from the specified category that is not among the prior questions, and a success value.
     - To return a question from any category change "type" to "click" (i.e. "type": "click")
-- `$ curl -d '{"previous_questions": [],"quiz_category": {"type": "Science", "id": "0"}}' -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/quizzes`
+- Sample: `$ curl -d '{"previous_questions": [],"quiz_category": {"type": "Science", "id": "0"}}' -H "Content-Type: application/json" -X POST http://127.0.0.1:5000/quizzes`
 ```
 {
   "question": {
