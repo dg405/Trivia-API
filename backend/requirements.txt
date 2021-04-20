@@ -132,7 +132,7 @@ protobuf==3.5.2.post1
 psutil==5.4.3
 psycopg2==2.8.5
 psycopg2-binary==2.8.2
-py==1.5.2
+py==1.10.0
 pycodestyle==2.5.0
 pycosat==0.6.3
 pycparser==2.18
