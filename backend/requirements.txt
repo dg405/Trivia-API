@@ -49,7 +49,7 @@ fastcache==1.0.2
 filelock==2.0.13
 flake8==3.7.9
 Flask==1.0.3
-Flask-Cors==3.0.7
+Flask-Cors==3.0.9
 Flask-Migrate==2.5.2
 Flask-Moment==0.9.0
 Flask-RESTful==0.3.7
