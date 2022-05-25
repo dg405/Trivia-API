@@ -140,7 +140,7 @@ pycrypto==2.6.1
 pycurl==7.43.0.1
 pyflakes==2.1.1
 Pygments==2.2.0
-PyJWT==1.6.4
+PyJWT==2.4.0
 pylint==1.8.2
 pylint-flask==0.6
 pylint-flask-sqlalchemy==0.2.0
